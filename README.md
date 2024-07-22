@@ -30,7 +30,7 @@ This project demonstrates how to create a map using Cartopy and Matplotlib to sh
 ## ▶️ Usage
 1. **Run the script:**
     ```bash
-    python drawing_map.py
+    python drawing_a_map.py
     ```
 
 2. **View the map output**.
