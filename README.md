@@ -6,7 +6,7 @@
 ![Cartopy](https://img.shields.io/badge/Cartopy-0.19.0+-orange.svg)
 
 ## 📋 Purpose
-This project demonstrates how to create a map using Cartopy and Matplotlib to show city locations in New Mexico.
+This project demonstrates how to create a map using Cartopy and Matplotlib to show city locations in any given state.
 
 ## 🛠️ Scope
 - Load data into pandas DataFrame
@@ -94,6 +94,8 @@ plt.show()
 ### Smmary
 This project provides a visualization of city locations in New Mexico using Cartopy and Matplotlib. The map shows the geographic distribution of cities and provides a clear visual representation of their locations.
 
+## 🌟 Encourage Experimentation
+Feel free to modify the code to visualize cities in your own state or hometown! Simply change the filtering criteria in the new_mexico_cities DataFrame to match the state or city you are interested in. This practice will help you understand how to work with geographical data and customize visualizations according to your needs.
 **Data Loading and Filtering**: The dataset of US cities is loaded, and the data is filtered to include only the cities in New Mexico. This step ensures that the map focuses on the relevant geographical region.
 
 **Map Visualization**: The filtered data is plotted on a map using Cartopy and Matplotlib. The map includes coastlines and formatted ticks for better readability. Each city is marked with a red dot, and city names are labeled for easy identification.
