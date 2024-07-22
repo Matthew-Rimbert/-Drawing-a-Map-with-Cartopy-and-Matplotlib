@@ -101,7 +101,10 @@ Feel free to modify the code to visualize cities in your own state or hometown! 
 
 ## Build upon this...
 Ideally, I would like to include additional features such as:
-- # Automated Data Retrieval # with APIs to fetch real-time data. For example, use a weather API to show current weather conditions in each city.
-- # Advanced Data Analysis # to include additional data analysis, such as demographic information, economic data, or crime rates for each city.
-- # Interactive Features # interactive libraries such as Folium to create an interactive map where users can zoom in/out and click on city markers for more information.
+- # Automated Data Retrieval:
+   Use APIs to fetch real-time data. For example, use a weather API to show current weather conditions in each city.
+- # Advanced Data Analysis:
+  To include additional data analysis, such as demographic information, economic data, or crime rates for each city.
+- # Interactive Features:
+  Add interactive libraries such as Folium to create an interactive map where users can zoom in/out and click on city markers for more information.
 
