@@ -93,7 +93,7 @@ plt.show()
 ![cities_of_NM](https://github.com/user-attachments/assets/1b893908-277e-4c62-a576-7f8e53ecc4be)
 
 
-## Smmary
+# Summary
 This project provides a visualization of city locations in New Mexico using Cartopy and Matplotlib. The map shows the geographic distribution of cities and provides a clear visual representation of their locations. This project showcases the capability of combining Cartopy and Matplotlib to create detailed geographical visualizations, which can be useful for various applications such as urban planning, logistics, and educational purposes.
 
 ## 🌟 Encourage Experimentation
