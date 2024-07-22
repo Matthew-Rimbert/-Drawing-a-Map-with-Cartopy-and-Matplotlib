@@ -1,4 +1,3 @@
-```python
 import pandas as pd
 import matplotlib.pyplot as plt
 import cartopy.crs as ccrs
@@ -43,4 +42,3 @@ for i in X.index:
 
 plt.title('Cities in Kentucky')
 plt.show()
-```
