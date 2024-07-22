@@ -88,7 +88,9 @@ plt.title('Cities in New Mexico')
 plt.show()
 ```
 ## 🏙️ Example Output
-(https://github.com/user-attachments/assets/fc3312c5-14c8-4468-ab1f-f87756916387)
+![cities_of_NM](https://github.com/user-attachments/assets/1b893908-277e-4c62-a576-7f8e53ecc4be)
+
+
 ### Smmary
 This project provides a visualization of city locations in New Mexico using Cartopy and Matplotlib. The map shows the geographic distribution of cities and provides a clear visual representation of their locations.
 
