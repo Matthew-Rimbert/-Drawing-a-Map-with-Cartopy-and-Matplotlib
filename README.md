@@ -46,3 +46,54 @@ us_cities = pd.read_csv("https://raw.githubusercontent.com/plotly/datasets/maste
 
 # Filter for New Mexico cities
 new_mexico_cities = us_cities[us_cities.State == 'New Mexico']
+```
+## Visualizing the Data on a Map
+```python
+import matplotlib.pyplot as plt
+import cartopy.crs as ccrs
+from cartopy.mpl.ticker import LongitudeFormatter, LatitudeFormatter
+
+# Set up the map projection
+fig, ax = plt.subplots(figsize=(15, 8))
+ax = plt.axes(projection=ccrs.Mercator())
+
+# Plot coastlines and set ticks
+ax.coastlines('10m')
+ax.set_yticks([31, 32, 33, 34, 35, 36, 37], crs=ccrs.PlateCarree())
+ax.set_xticks([-109, -108, -107, -106, -105, -104], crs=ccrs.PlateCarree())
+
+# Format the ticks
+lon_formatter = LongitudeFormatter()
+lat_formatter = LatitudeFormatter()
+ax.xaxis.set_major_formatter(lon_formatter)
+ax.yaxis.set_major_formatter(lat_formatter)
+
+# Set the extent to focus on New Mexico
+ax.set_extent([-109, -103, 31, 37])
+
+# Extract longitude and latitude for the cities
+X = new_mexico_cities['lon']
+Y = new_mexico_cities['lat']
+cities = new_mexico_cities['City']
+
+# Plot the cities on the map
+ax.scatter(X, Y, color='red', marker='o', transform=ccrs.PlateCarree())
+
+# Add city names as labels
+for i in X.index:
+    label = cities[i]
+    plt.text(X[i], Y[i] + 0.05, label, clip_on=True, fontsize=10, horizontalalignment='center', transform=ccrs.Geodetic())
+
+plt.title('Cities in New Mexico')
+plt.show()
+```
+## 🏙️ Example Output
+[Cities in New Mexico](https://github.com/user-attachments/assets/fc3312c5-14c8-4468-ab1f-f87756916387)
+### Smmary
+This project provides a visualization of city locations in New Mexico using Cartopy and Matplotlib. The map shows the geographic distribution of cities and provides a clear visual representation of their locations.
+
+**Data Loading and Filtering**: The dataset of US cities is loaded, and the data is filtered to include only the cities in New Mexico. This step ensures that the map focuses on the relevant geographical region.
+
+**Map Visualization**: The filtered data is plotted on a map using Cartopy and Matplotlib. The map includes coastlines and formatted ticks for better readability. Each city is marked with a red dot, and city names are labeled for easy identification.
+
+This project showcases the capability of combining Cartopy and Matplotlib to create detailed geographical visualizations, which can be useful for various applications such as urban planning, logistics, and educational purposes.
